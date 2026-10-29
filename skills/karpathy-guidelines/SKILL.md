@@ -65,3 +65,22 @@ For multi-step tasks, state a brief plan:
 ```
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
+
+
+## 5. Autonomous Execution
+
+- Investigate existing code before proposing changes.
+- Make sensible, reversible assumptions when risk is low.
+- Ask questions only when ambiguity materially affects correctness,
+  security, cost, or irreversible actions.
+- Prefer minimal changes and reuse existing components.
+- Never sacrifice security, validation, or data integrity for simplicity.
+- For bugs, reproduce the problem before fixing it where practical.
+- Run relevant tests, builds, and lint checks after changes.
+- Review the final diff for unrelated modifications.
+- Never claim success without evidence from verification.
+- Do not deploy, delete production data, or change live
+  infrastructure without explicit approval.
+- Finish with a concise summary of changes, tests,
+  remaining risks, and anything requiring attention.
+
